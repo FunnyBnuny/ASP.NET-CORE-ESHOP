@@ -1,7 +1,7 @@
-#**BACKLOG**  
-##FRONTEND  
+# **BACKLOG**  
+## FRONTEND  
 -Designing a FrontEnd UI/Architecture  
-##BACKEND  
+## BACKEND  
 -Designing a BackEnd Diagram/Architecture  
-##OTHER  
+## OTHER  
 -Making a Week-0 Report  
