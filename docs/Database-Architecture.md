@@ -4,7 +4,7 @@ This document describes the database schema for a clothing e-commerce platform. 
 
 ---
 
-![DatabaseDiagram](/Images/ASP.NET-CORE-ESHOP-DatabaseDiagram.png)
+![DatabaseDiagram](/docs/Images/ASP.NET-CORE-ESHOP-DatabaseDiagram.png)
 
 ---
 
