@@ -1,0 +1,211 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Files\\\u0160kola\\Projekty\\ESHOP-ASP.NET\\ESHOP\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D562143D-55FC-B47C-3FE1-A74EFD45D833}|eshop.client\\eshop.client.esproj|e:\\files\\\u0161kola\\projekty\\eshop-asp.net\\eshop\\eshop.client\\src\\pages\\index.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{D562143D-55FC-B47C-3FE1-A74EFD45D833}|eshop.client\\eshop.client.esproj|solutionrelative:eshop.client\\src\\pages\\index.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D562143D-55FC-B47C-3FE1-A74EFD45D833}|eshop.client\\eshop.client.esproj|e:\\files\\\u0161kola\\projekty\\eshop-asp.net\\eshop\\eshop.client\\vite.config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{D562143D-55FC-B47C-3FE1-A74EFD45D833}|eshop.client\\eshop.client.esproj|solutionrelative:eshop.client\\vite.config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D562143D-55FC-B47C-3FE1-A74EFD45D833}|eshop.client\\eshop.client.esproj|e:\\files\\\u0161kola\\projekty\\eshop-asp.net\\eshop\\eshop.client\\package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D562143D-55FC-B47C-3FE1-A74EFD45D833}|eshop.client\\eshop.client.esproj|solutionrelative:eshop.client\\package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D562143D-55FC-B47C-3FE1-A74EFD45D833}|eshop.client\\eshop.client.esproj|e:\\files\\\u0161kola\\projekty\\eshop-asp.net\\eshop\\eshop.client\\src\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{D562143D-55FC-B47C-3FE1-A74EFD45D833}|eshop.client\\eshop.client.esproj|solutionrelative:eshop.client\\src\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D562143D-55FC-B47C-3FE1-A74EFD45D833}|eshop.client\\eshop.client.esproj|e:\\files\\\u0161kola\\projekty\\eshop-asp.net\\eshop\\eshop.client\\src\\app.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{D562143D-55FC-B47C-3FE1-A74EFD45D833}|eshop.client\\eshop.client.esproj|solutionrelative:eshop.client\\src\\app.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCC5C669-376B-4F60-9C82-77625E1D9900}|ESHOP.Server\\ESHOP.Server.csproj|e:\\files\\\u0161kola\\projekty\\eshop-asp.net\\eshop\\eshop.server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CCC5C669-376B-4F60-9C82-77625E1D9900}|ESHOP.Server\\ESHOP.Server.csproj|solutionrelative:eshop.server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCC5C669-376B-4F60-9C82-77625E1D9900}|ESHOP.Server\\ESHOP.Server.csproj|e:\\files\\\u0161kola\\projekty\\eshop-asp.net\\eshop\\eshop.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CCC5C669-376B-4F60-9C82-77625E1D9900}|ESHOP.Server\\ESHOP.Server.csproj|solutionrelative:eshop.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCC5C669-376B-4F60-9C82-77625E1D9900}|ESHOP.Server\\ESHOP.Server.csproj|e:\\files\\\u0161kola\\projekty\\eshop-asp.net\\eshop\\eshop.server\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CCC5C669-376B-4F60-9C82-77625E1D9900}|ESHOP.Server\\ESHOP.Server.csproj|solutionrelative:eshop.server\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCC5C669-376B-4F60-9C82-77625E1D9900}|ESHOP.Server\\ESHOP.Server.csproj|e:\\files\\\u0161kola\\projekty\\eshop-asp.net\\eshop\\eshop.server\\managers\\productmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CCC5C669-376B-4F60-9C82-77625E1D9900}|ESHOP.Server\\ESHOP.Server.csproj|solutionrelative:eshop.server\\managers\\productmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCC5C669-376B-4F60-9C82-77625E1D9900}|ESHOP.Server\\ESHOP.Server.csproj|e:\\files\\\u0161kola\\projekty\\eshop-asp.net\\eshop\\eshop.server\\eshop.server.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{CCC5C669-376B-4F60-9C82-77625E1D9900}|ESHOP.Server\\ESHOP.Server.csproj|solutionrelative:eshop.server\\eshop.server.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2F6D3F0-3602-4970-BF10-BBEE3BEF6DDF}|ESHOP.Core\\ESHOP.Core.csproj|e:\\files\\\u0161kola\\projekty\\eshop-asp.net\\eshop\\eshop.core\\eshopcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2F6D3F0-3602-4970-BF10-BBEE3BEF6DDF}|ESHOP.Core\\ESHOP.Core.csproj|solutionrelative:eshop.core\\eshopcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 164,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "app.css",
+              "DocumentMoniker": "E:\\Files\\\u0160kola\\Projekty\\ESHOP-ASP.NET\\ESHOP\\eshop.client\\src\\app.css",
+              "RelativeDocumentMoniker": "eshop.client\\src\\app.css",
+              "ToolTip": "E:\\Files\\\u0160kola\\Projekty\\ESHOP-ASP.NET\\ESHOP\\eshop.client\\src\\app.css",
+              "RelativeToolTip": "eshop.client\\src\\app.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-04-23T15:30:50.924Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "package.json",
+              "DocumentMoniker": "E:\\Files\\\u0160kola\\Projekty\\ESHOP-ASP.NET\\ESHOP\\eshop.client\\package.json",
+              "RelativeDocumentMoniker": "eshop.client\\package.json",
+              "ToolTip": "E:\\Files\\\u0160kola\\Projekty\\ESHOP-ASP.NET\\ESHOP\\eshop.client\\package.json",
+              "RelativeToolTip": "eshop.client\\package.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-23T15:26:50.158Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "vite.config.js",
+              "DocumentMoniker": "E:\\Files\\\u0160kola\\Projekty\\ESHOP-ASP.NET\\ESHOP\\eshop.client\\vite.config.js",
+              "RelativeDocumentMoniker": "eshop.client\\vite.config.js",
+              "ToolTip": "E:\\Files\\\u0160kola\\Projekty\\ESHOP-ASP.NET\\ESHOP\\eshop.client\\vite.config.js",
+              "RelativeToolTip": "eshop.client\\vite.config.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-04-23T15:15:59.635Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "index.jsx",
+              "DocumentMoniker": "E:\\Files\\\u0160kola\\Projekty\\ESHOP-ASP.NET\\ESHOP\\eshop.client\\src\\pages\\index.jsx",
+              "RelativeDocumentMoniker": "eshop.client\\src\\pages\\index.jsx",
+              "ToolTip": "E:\\Files\\\u0160kola\\Projekty\\ESHOP-ASP.NET\\ESHOP\\eshop.client\\src\\pages\\index.jsx*",
+              "RelativeToolTip": "eshop.client\\src\\pages\\index.jsx*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2026-04-23T14:59:55.16Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ProductManager.cs",
+              "DocumentMoniker": "E:\\Files\\\u0160kola\\Projekty\\ESHOP-ASP.NET\\ESHOP\\ESHOP.Server\\Managers\\ProductManager.cs",
+              "RelativeDocumentMoniker": "ESHOP.Server\\Managers\\ProductManager.cs",
+              "ToolTip": "E:\\Files\\\u0160kola\\Projekty\\ESHOP-ASP.NET\\ESHOP\\ESHOP.Server\\Managers\\ProductManager.cs",
+              "RelativeToolTip": "ESHOP.Server\\Managers\\ProductManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-23T14:40:47.127Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ESHOP.Server",
+              "DocumentMoniker": "E:\\Files\\\u0160kola\\Projekty\\ESHOP-ASP.NET\\ESHOP\\ESHOP.Server\\ESHOP.Server.csproj",
+              "RelativeDocumentMoniker": "ESHOP.Server\\ESHOP.Server.csproj",
+              "ToolTip": "E:\\Files\\\u0160kola\\Projekty\\ESHOP-ASP.NET\\ESHOP\\ESHOP.Server\\ESHOP.Server.csproj",
+              "RelativeToolTip": "ESHOP.Server\\ESHOP.Server.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-04-23T14:40:18.296Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "App.jsx",
+              "DocumentMoniker": "E:\\Files\\\u0160kola\\Projekty\\ESHOP-ASP.NET\\ESHOP\\eshop.client\\src\\App.jsx",
+              "RelativeDocumentMoniker": "eshop.client\\src\\App.jsx",
+              "ToolTip": "E:\\Files\\\u0160kola\\Projekty\\ESHOP-ASP.NET\\ESHOP\\eshop.client\\src\\App.jsx",
+              "RelativeToolTip": "eshop.client\\src\\App.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2026-04-23T14:37:48.026Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "E:\\Files\\\u0160kola\\Projekty\\ESHOP-ASP.NET\\ESHOP\\ESHOP.Server\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "ESHOP.Server\\Controllers\\ProductController.cs",
+              "ToolTip": "E:\\Files\\\u0160kola\\Projekty\\ESHOP-ASP.NET\\ESHOP\\ESHOP.Server\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "ESHOP.Server\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-23T14:27:24.057Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\Files\\\u0160kola\\Projekty\\ESHOP-ASP.NET\\ESHOP\\ESHOP.Server\\appsettings.json",
+              "RelativeDocumentMoniker": "ESHOP.Server\\appsettings.json",
+              "ToolTip": "E:\\Files\\\u0160kola\\Projekty\\ESHOP-ASP.NET\\ESHOP\\ESHOP.Server\\appsettings.json",
+              "RelativeToolTip": "ESHOP.Server\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-23T14:24:42.889Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Files\\\u0160kola\\Projekty\\ESHOP-ASP.NET\\ESHOP\\ESHOP.Server\\Program.cs",
+              "RelativeDocumentMoniker": "ESHOP.Server\\Program.cs",
+              "ToolTip": "E:\\Files\\\u0160kola\\Projekty\\ESHOP-ASP.NET\\ESHOP\\ESHOP.Server\\Program.cs",
+              "RelativeToolTip": "ESHOP.Server\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-23T14:21:38.44Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "EshopContext.cs",
+              "DocumentMoniker": "E:\\Files\\\u0160kola\\Projekty\\ESHOP-ASP.NET\\ESHOP\\ESHOP.Core\\EshopContext.cs",
+              "RelativeDocumentMoniker": "ESHOP.Core\\EshopContext.cs",
+              "ToolTip": "E:\\Files\\\u0160kola\\Projekty\\ESHOP-ASP.NET\\ESHOP\\ESHOP.Core\\EshopContext.cs",
+              "RelativeToolTip": "ESHOP.Core\\EshopContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-23T14:18:27.051Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

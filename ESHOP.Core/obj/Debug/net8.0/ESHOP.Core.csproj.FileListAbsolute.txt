@@ -1,0 +1,12 @@
+E:\Files\Škola\Projekty\ESHOP-ASP.NET\ESHOP\ESHOP.Core\bin\Debug\net8.0\ESHOP.Core.deps.json
+E:\Files\Škola\Projekty\ESHOP-ASP.NET\ESHOP\ESHOP.Core\bin\Debug\net8.0\ESHOP.Core.dll
+E:\Files\Škola\Projekty\ESHOP-ASP.NET\ESHOP\ESHOP.Core\bin\Debug\net8.0\ESHOP.Core.pdb
+E:\Files\Škola\Projekty\ESHOP-ASP.NET\ESHOP\ESHOP.Core\obj\Debug\net8.0\ESHOP.Core.csproj.AssemblyReference.cache
+E:\Files\Škola\Projekty\ESHOP-ASP.NET\ESHOP\ESHOP.Core\obj\Debug\net8.0\ESHOP.Core.GeneratedMSBuildEditorConfig.editorconfig
+E:\Files\Škola\Projekty\ESHOP-ASP.NET\ESHOP\ESHOP.Core\obj\Debug\net8.0\ESHOP.Core.AssemblyInfoInputs.cache
+E:\Files\Škola\Projekty\ESHOP-ASP.NET\ESHOP\ESHOP.Core\obj\Debug\net8.0\ESHOP.Core.AssemblyInfo.cs
+E:\Files\Škola\Projekty\ESHOP-ASP.NET\ESHOP\ESHOP.Core\obj\Debug\net8.0\ESHOP.Core.csproj.CoreCompileInputs.cache
+E:\Files\Škola\Projekty\ESHOP-ASP.NET\ESHOP\ESHOP.Core\obj\Debug\net8.0\ESHOP.Core.dll
+E:\Files\Škola\Projekty\ESHOP-ASP.NET\ESHOP\ESHOP.Core\obj\Debug\net8.0\refint\ESHOP.Core.dll
+E:\Files\Škola\Projekty\ESHOP-ASP.NET\ESHOP\ESHOP.Core\obj\Debug\net8.0\ESHOP.Core.pdb
+E:\Files\Škola\Projekty\ESHOP-ASP.NET\ESHOP\ESHOP.Core\obj\Debug\net8.0\ref\ESHOP.Core.dll
