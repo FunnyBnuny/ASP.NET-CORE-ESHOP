@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\eshop.client",
+    "\\ESHOP.Core",
+    "\\ESHOP.Core\\Models",
+    "\\ESHOP.Server",
+    "\\ESHOP.Server\\Controllers",
+    "\\ESHOP.Server\\Managers"
+  ],
+  "PreviewInSolutionExplorer": false
+}

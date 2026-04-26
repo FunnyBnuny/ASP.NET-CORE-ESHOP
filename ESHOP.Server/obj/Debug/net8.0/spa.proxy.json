@@ -3,7 +3,7 @@
 "ServerUrl": "https://localhost:63534",
 "RedirectUrl": "",
 "LaunchCommand": "npm run dev",
-"WorkingDirectory": "E:\\Files\\Škola\\Projekty\\ESHOP-ASP.NET\\ESHOP\\ESHOP.Server\\..\\eshop.client",
+"WorkingDirectory": "C:\\Users\\Willi\\Documents\\GitHub\\ASP.NET-CORE-ESHOP\\ESHOP.Server\\..\\eshop.client",
 "MaxTimeoutInSeconds": "120",
 "KeepRunning": "false"
 }

@@ -1262,23 +1262,23 @@
     ]
   },
   "packageFolders": {
-    "D:\\Users\\KratochvilVaclav\\.nuget\\packages\\": {},
-    "D:\\Apps\\WorkApps\\SQL\\SQL Studio 2021\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Willi\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Files\\Škola\\Projekty\\ESHOP-ASP.NET\\ESHOP\\ESHOP.Core\\ESHOP.Core.csproj",
+      "projectUniqueName": "C:\\Users\\Willi\\Documents\\GitHub\\ASP.NET-CORE-ESHOP\\ESHOP.Core\\ESHOP.Core.csproj",
       "projectName": "ESHOP.Core",
-      "projectPath": "E:\\Files\\Škola\\Projekty\\ESHOP-ASP.NET\\ESHOP\\ESHOP.Core\\ESHOP.Core.csproj",
-      "packagesPath": "D:\\Users\\KratochvilVaclav\\.nuget\\packages\\",
-      "outputPath": "E:\\Files\\Škola\\Projekty\\ESHOP-ASP.NET\\ESHOP\\ESHOP.Core\\obj\\",
+      "projectPath": "C:\\Users\\Willi\\Documents\\GitHub\\ASP.NET-CORE-ESHOP\\ESHOP.Core\\ESHOP.Core.csproj",
+      "packagesPath": "C:\\Users\\Willi\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Willi\\Documents\\GitHub\\ASP.NET-CORE-ESHOP\\ESHOP.Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "D:\\Apps\\WorkApps\\SQL\\SQL Studio 2021\\Shared\\NuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "D:\\Users\\KratochvilVaclav\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Willi\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -1291,7 +1291,6 @@
       },
       "frameworks": {
         "net8.0": {
-          "framework": "net8.0",
           "targetAlias": "net8.0",
           "projectReferences": {}
         }
@@ -1306,11 +1305,10 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "10.0.200"
+      "SdkAnalysisLevel": "9.0.300"
     },
     "frameworks": {
       "net8.0": {
-        "framework": "net8.0",
         "targetAlias": "net8.0",
         "dependencies": {
           "Microsoft.EntityFrameworkCore": {
@@ -1338,7 +1336,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.202/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
