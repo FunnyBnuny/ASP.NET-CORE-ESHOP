@@ -1,1 +1,2 @@
 E:\Files\Škola\Projekty\ESHOP-ASP.NET\ESHOP\eshop.client\obj\Debug\eshop.client.esproj.CoreCompileInputs.cache
+E:\Files\Škola\Projekty\ASP.NET-CORE-ESHOP\eshop.client\obj\Debug\eshop.client.esproj.CoreCompileInputs.cache
