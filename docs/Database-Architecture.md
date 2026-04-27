@@ -144,7 +144,6 @@ Stores image URLs associated with a product, including a primary image flag.
 
 ## Table: `product_variants`
 Specific size/color combinations of a product, each with its own SKU, price adjustment, and stock.  
-*The old `sizes` and `colors` tables have been removed; allowed values are enforced by `size_enum` and `color_enum`.*
 
 | Column | Type | Nullable | Default | Description |
 |--------|------|----------|---------|-------------|
@@ -203,7 +202,6 @@ For guest users, `user_id` is `NULL` and `session_id` identifies the cart.
 
 ## Table: `order_items`
 Line items for both shopping carts (when parent order has `order_status = 'cart'`) and completed orders.  
-*The old `cart` and `cart_items` tables have been removed; all cart data is stored here via `orders`.*
 
 | Column | Type | Nullable | Default | Description |
 |--------|------|----------|---------|-------------|
