@@ -14,29 +14,32 @@ namespace ESHOP.Core.Models
         [Key]
         public int id { get; set; }
 
-        [ForeignKey("User")]
-        public int user_id {  get; set; }
+        [Required]
+        public int user_id { get; set; }
 
-        public  User User { get; set; }
+        [ForeignKey(nameof(user_id))]
+        public User User { get; set; }
 
+        [Required]
         public string address_line1 { get; set; }
 
         public string address_line2 { get; set; }
 
+        [Required]
         public string city { get; set; }
 
         public string state { get; set; }
 
+        [Required]
         public string postal_code { get; set; }
 
+        [Required]
         public string country { get; set; }
 
         public bool is_default_shipping { get; set; }
 
         public bool is_default_billing { get; set; }
 
-        //DB datatype is timestamp
         public DateTime created_at { get; set; } = DateTime.UtcNow;
-
     }
 }
