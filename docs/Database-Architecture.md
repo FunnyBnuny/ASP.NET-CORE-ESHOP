@@ -1,7 +1,7 @@
 # ASP.NET‑CORE‑ESHOP Database Schema
 
 This document describes the database schema for a clothing e‑commerce platform.  
-The schema manages users, products with size/color variants, orders (including active shopping carts), and reviews.
+The schema manages users, products with size/color variants, orders, and reviews.
 
 ---
 
