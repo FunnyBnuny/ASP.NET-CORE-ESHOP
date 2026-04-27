@@ -16,24 +16,21 @@ namespace ESHOP.Core.Models
         [Key]
         public int id { get; set; }
 
+        [Required]
         public string name { get; set; }
 
+        [Required]
         public string slug { get; set; }
 
         public string description { get; set; }
 
-        [ForeignKey("category_id")]
-        public int parent_category_ID { get; set; }
+        public int? parent_category_id { get; set; }
 
-        public Product_category Product_category { get; set; } 
+        [ForeignKey(nameof(parent_category_id))]
+        public Category ParentCategory { get; set; }
 
-        public string image_Url { get; set; }
+        public string image_url { get; set; }
 
-       //DB datatype is timestamp
-       public DateTime created_at { get; set; } = DateTime.UtcNow;
-
-
- 
-
+        public DateTime created_at { get; set; } = DateTime.UtcNow;
     }
 }
