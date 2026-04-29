@@ -3,25 +3,31 @@ import { useState } from "react";
 function Login() {
 
     //sign
-    const [loginEmail, setLoginEmail] = useState('');
-    const [loginPassword, setLoginPassword] = useState('');
-    const [loginError, setLoginError] = useState('');
-    const [showLoginPassword, setShowLoginPassword] = useState(false);
-    const [rememberMe, setRememberMe] = useState(false);
+    const [data, setData] = useState({
+        loginEmail: '',
+        loginPassword: '',
+        loginError: '',
+        showLoginPassword: false,
+        rememberMe: false,
+        //reg
+        regFirstName: '',
+        regLastName: '',
+        regEmail: '',
+        regPassword: '',
+        regPasswordAgain: '',
+        regError: '',
+        regSuccess: '',
+        showRegPassword: false,
+        showRegPasswordAgain: false
+    });
 
-    //reg
-    const [regFirstName, setRegFirstName] = useState('');
-    const [regLastName, setRegLastName] = useState('');
-    const [regEmail, setRegEmail] = useState('');
-    const [regPassword, setRegPassword] = useState('');
-    const [regPasswordAgain, setRegPasswordAgain] = useState('');
-    const [regError, setRegError] = useState('');
-    const [regSuccess, setRegSuccess] = useState('');
-    const [showRegPassword, setShowRegPassword] = useState(false);
-    const [showRegPasswordAgain, setShowRegPasswordAgain] = useState(false);
+    // function for value change
+    const updateData = (key, value) => {
+        setData(prev => ({ ...prev, [key]: value }));
+    };
 
     //regex
-    const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9]+\.[a-zA-Z]{2,4}$/;
+    const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9]+\.[a-zA-Z]{2,3}$/;
     const passwordRegex = /^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[.\-/_]).{8,}$/;
 
     const isEmailValid = (email) => {
@@ -32,40 +38,31 @@ function Login() {
         return passwordRegex.test(password);
     }
 
-    //spolecny styl
-    const inputStyle = {
-        width: '90%',
-        padding: '12px',
-        paddingRight: '45px',
-        border: '1px solid #ccc',
-        borderRadius: '25px',
-        fontSize: '14px',
-        outline: 'none'
-    };
-
     //reg
     const handleRegistration = (e) => {
         e.preventDefault();
-        setRegError('');
-        setRegSuccess('');
+        updateData('regError', '');
+        updateData('regSuccess', '');
+
+        const { regFirstName, regLastName, regEmail, regPassword, regPasswordAgain } = data;
 
         if (regFirstName === '' || regLastName === '' || regEmail === '' || regPassword === '' || regPasswordAgain === '') {
-            setRegError('Please fill in all fields');
+            updateData('regError', 'Please fill in all fields');
             return;
         }
 
         if (!isEmailValid(regEmail)) {
-            setRegError('Please enter a valid email (e.g., name@domain.com)');
+            updateData('regError', 'Please enter a valid email (e.g., name@domain.com)');
             return;
         }
 
         if (!isPasswordValid(regPassword)) {
-            setRegError('Password must have: min. 8 chars, 1 uppercase, 1 lowercase, 1 number, 1 special character');
+            updateData('regError', 'Password must have: min. 8 chars, 1 uppercase, 1 lowercase, 1 number, 1 special character');
             return;
         }
 
         if (regPassword !== regPasswordAgain) {
-            setRegError('Passwords do not match');
+            updateData('regError', 'Passwords do not match');
             return;
         }
 
@@ -73,7 +70,7 @@ function Login() {
         const userExists = storedUsers.some(user => user.email === regEmail);
 
         if (userExists) {
-            setRegError('User with this email already exists');
+            updateData('regError', 'User with this email already exists');
             return;
         }
 
@@ -87,21 +84,23 @@ function Login() {
         storedUsers.push(newUser);
         localStorage.setItem('users', JSON.stringify(storedUsers));
 
-        setRegSuccess('Registration successful! You can now log in.');
-        setRegFirstName('');
-        setRegLastName('');
-        setRegEmail('');
-        setRegPassword('');
-        setRegPasswordAgain('');
+        updateData('regSuccess', 'Registration successful! You can now log in.');
+        updateData('regFirstName', '');
+        updateData('regLastName', '');
+        updateData('regEmail', '');
+        updateData('regPassword', '');
+        updateData('regPasswordAgain', '');
     };
 
     //sign
     const handleLogin = (e) => {
         e.preventDefault();
-        setLoginError('');
+        updateData('loginError', '');
+
+        const { loginEmail, loginPassword, rememberMe } = data;
 
         if (loginEmail === '' || loginPassword === '') {
-            setLoginError('Please fill in all fields');
+            updateData('loginError', 'Please fill in all fields');
             return;
         }
 
@@ -116,210 +115,135 @@ function Login() {
             }
             alert(`Welcome ${user.firstName} ${user.lastName}! You have successfully logged in.`);
         } else {
-            setLoginError('Invalid email or password');
+            updateData('loginError', 'Invalid email or password');
         }
     };
 
     //page
     return (
-        <div style={{
-            fontFamily: 'Arial, sans-serif',
-            padding: '40px 20px',
-            maxWidth: '1000px',
-            margin: '0 auto'
-        }}>
+        <div className="container-small">
 
             {/* Home > Login */}
-            <div style={{
-                marginBottom: '40px',
-                fontSize: '14px',
-                color: '#666'
-            }}>
-                <span style={{ cursor: 'pointer' }}>Home</span>
-                <span style={{ margin: '0 8px' }}>&gt;</span>
-                <span style={{ color: '#000' }}>Login</span>
+            <div className="breadcrumb">
+                <span className="breadcrumb-home">Home</span>
+                <span className="separator">&gt;</span>
+                <span className="current">Login</span>
             </div>
 
             {/* vertikalni cara */}
-            <div style={{
-                display: 'flex',
-                gap: '50px',
-                borderTop: '1px solid #e0e0e0',
-                paddingTop: '40px'
-            }}>
+            <div className="two-columns">
 
                 {/* reg---------------------------------------------------------------------------------- */}
-                <div style={{
-                    flex: 1,
-                    borderRight: '1px solid #e0e0e0',
-                    paddingRight: '40px'
-                }}>
-                    <h2 style={{
-                        fontSize: '24px',
-                        marginBottom: '10px',
-                        fontWeight: 'normal'
-                    }}>
+                <div className="two-columns-left">
+                    <h2 className="section-title">
                         Create account
                     </h2>
-                    <p style={{
-                        fontSize: '14px',
-                        color: '#666',
-                        marginBottom: '30px'
-                    }}>
+                    <p className="section-subtitle">
                         Register and start shopping
                     </p>
 
                     <form onSubmit={handleRegistration}>
 
                         {/* FIRST NAME */}
-                        <div style={{ marginBottom: '20px' }}>
-                            <label style={{
-                                display: 'block',
-                                marginBottom: '8px',
-                                fontSize: '14px',
-                                fontWeight: '500'
-                            }}>
+                        <div className="form-group">
+                            <label className="form-label">
                                 First name
                             </label>
                             <input
                                 type="text"
-                                value={regFirstName}
-                                onChange={(e) => setRegFirstName(e.target.value)}
+                                value={data.regFirstName}
+                                onChange={(e) => updateData('regFirstName', e.target.value)}
                                 placeholder="Enter your first name"
-                                style={inputStyle}
+                                className="input-rounded"
                             />
                         </div>
 
                         {/* LAST NAME */}
-                        <div style={{ marginBottom: '20px' }}>
-                            <label style={{
-                                display: 'block',
-                                marginBottom: '8px',
-                                fontSize: '14px',
-                                fontWeight: '500'
-                            }}>
+                        <div className="form-group">
+                            <label className="form-label">
                                 Last name
                             </label>
                             <input
                                 type="text"
-                                value={regLastName}
-                                onChange={(e) => setRegLastName(e.target.value)}
+                                value={data.regLastName}
+                                onChange={(e) => updateData('regLastName', e.target.value)}
                                 placeholder="Enter your last name"
-                                style={inputStyle}
+                                className="input-rounded"
                             />
                         </div>
 
                         {/* EMAIL */}
-                        <div style={{ marginBottom: '20px' }}>
-                            <label style={{
-                                display: 'block',
-                                marginBottom: '8px',
-                                fontSize: '14px',
-                                fontWeight: '500'
-                            }}>
+                        <div className="form-group">
+                            <label className="form-label">
                                 Email address
                             </label>
                             <input
                                 type="email"
-                                value={regEmail}
-                                onChange={(e) => setRegEmail(e.target.value)}
+                                value={data.regEmail}
+                                onChange={(e) => updateData('regEmail', e.target.value)}
                                 placeholder="Enter your email address"
-                                style={inputStyle}
+                                className="input-rounded"
                             />
                         </div>
 
                         {/* PASSWORD */}
-                        <div style={{ marginBottom: '20px' }}>
-                            <label style={{
-                                display: 'block',
-                                marginBottom: '8px',
-                                fontSize: '14px',
-                                fontWeight: '500'
-                            }}>
+                        <div className="form-group">
+                            <label className="form-label">
                                 Password
                             </label>
-                            <div style={{ position: 'relative' }}>
+                            <div className="password-wrapper">
                                 <input
-                                    type={showRegPassword ? "text" : "password"}
-                                    value={regPassword}
-                                    onChange={(e) => setRegPassword(e.target.value)}
+                                    type={data.showRegPassword ? "text" : "password"}
+                                    value={data.regPassword}
+                                    onChange={(e) => updateData('regPassword', e.target.value)}
                                     placeholder="Enter your password"
-                                    style={inputStyle}
+                                    className="input-rounded"
                                 />
                                 <span
-                                    onClick={() => setShowRegPassword(!showRegPassword)}
-                                    style={{
-                                        position: 'absolute',
-                                        right: '15px',
-                                        top: '50%',
-                                        transform: 'translateY(-50%)',
-                                        cursor: 'pointer',
-                                        fontSize: '18px'
-                                    }}
+                                    onClick={() => updateData('showRegPassword', !data.showRegPassword)}
+                                    className="eye-icon"
                                 >
-                                    {showRegPassword ? '🙈' : '👁️'}
+                                    {data.showRegPassword ? '🙈' : '👁️'}
                                 </span>
                             </div>
                         </div>
 
                         {/* CONFIRM PASSWORD*/}
-                        <div style={{ marginBottom: '30px' }}>
-                            <label style={{
-                                display: 'block',
-                                marginBottom: '8px',
-                                fontSize: '14px',
-                                fontWeight: '500'
-                            }}>
+                        <div className="form-group-last">
+                            <label className="form-label">
                                 Confirm password
                             </label>
-                            <div style={{ position: 'relative' }}>
+                            <div className="password-wrapper">
                                 <input
-                                    type={showRegPasswordAgain ? "text" : "password"}
-                                    value={regPasswordAgain}
-                                    onChange={(e) => setRegPasswordAgain(e.target.value)}
+                                    type={data.showRegPasswordAgain ? "text" : "password"}
+                                    value={data.regPasswordAgain}
+                                    onChange={(e) => updateData('regPasswordAgain', e.target.value)}
                                     placeholder="Confirm your password"
-                                    style={inputStyle}
+                                    className="input-rounded"
                                 />
                                 <span
-                                    onClick={() => setShowRegPasswordAgain(!showRegPasswordAgain)}
-                                    style={{
-                                        position: 'absolute',
-                                        right: '15px',
-                                        top: '50%',
-                                        transform: 'translateY(-50%)',
-                                        cursor: 'pointer',
-                                        fontSize: '18px'
-                                    }}
+                                    onClick={() => updateData('showRegPasswordAgain', !data.showRegPasswordAgain)}
+                                    className="eye-icon"
                                 >
-                                    {showRegPasswordAgain ? '🙈' : '👁️'}
+                                    {data.showRegPasswordAgain ? '🙈' : '👁️'}
                                 </span>
                             </div>
                         </div>
 
-                        {regError && (
-                            <p style={{ color: 'red', fontSize: '13px', marginBottom: '15px' }}>
-                                {regError}
+                        {data.regError && (
+                            <p className="message-error">
+                                {data.regError}
                             </p>
                         )}
-                        {regSuccess && (
-                            <p style={{ color: 'green', fontSize: '13px', marginBottom: '15px' }}>
-                                {regSuccess}
+                        {data.regSuccess && (
+                            <p className="message-success">
+                                {data.regSuccess}
                             </p>
                         )}
 
                         <button
                             type="submit"
-                            style={{
-                                width: '100%',
-                                padding: '14px',
-                                backgroundColor: '#000',
-                                color: '#fff',
-                                border: 'none',
-                                borderRadius: '25px',
-                                cursor: 'pointer',
-                                fontSize: '14px',
-                                fontWeight: 'bold'
-                            }}
+                            className="btn btn-primary btn-full"
                         >
                             CREATE ACCOUNT
                         </button>
@@ -327,134 +251,77 @@ function Login() {
                 </div>
 
                 {/*sign----------------------------------------------------------------- */}
-                <div style={{
-                    flex: 1,
-                    paddingLeft: '10px'
-                }}>
-                    <h2 style={{
-                        fontSize: '24px',
-                        marginBottom: '10px',
-                        fontWeight: 'normal'
-                    }}>
+                <div className="two-columns-right">
+                    <h2 className="section-title">
                         Sign in
                     </h2>
-                    <p style={{
-                        fontSize: '14px',
-                        color: '#666',
-                        marginBottom: '30px'
-                    }}>
+                    <p className="section-subtitle">
                         Already have an account? Sign in
                     </p>
 
                     <form onSubmit={handleLogin}>
 
                         {/* EMAIL */}
-                        <div style={{ marginBottom: '20px' }}>
-                            <label style={{
-                                display: 'block',
-                                marginBottom: '8px',
-                                fontSize: '14px',
-                                fontWeight: '500'
-                            }}>
+                        <div className="form-group">
+                            <label className="form-label">
                                 Email address
                             </label>
                             <input
                                 type="email"
-                                value={loginEmail}
-                                onChange={(e) => setLoginEmail(e.target.value)}
+                                value={data.loginEmail}
+                                onChange={(e) => updateData('loginEmail', e.target.value)}
                                 placeholder="Enter your email address"
-                                style={inputStyle}
+                                className="input-rounded"
                             />
                         </div>
 
                         {/* PASSWORD */}
-                        <div style={{ marginBottom: '15px' }}>
-                            <label style={{
-                                display: 'block',
-                                marginBottom: '8px',
-                                fontSize: '14px',
-                                fontWeight: '500'
-                            }}>
+                        <div className="form-group">
+                            <label className="form-label">
                                 Password
                             </label>
-                            <div style={{ position: 'relative' }}>
+                            <div className="password-wrapper">
                                 <input
-                                    type={showLoginPassword ? "text" : "password"}
-                                    value={loginPassword}
-                                    onChange={(e) => setLoginPassword(e.target.value)}
+                                    type={data.showLoginPassword ? "text" : "password"}
+                                    value={data.loginPassword}
+                                    onChange={(e) => updateData('loginPassword', e.target.value)}
                                     placeholder="Enter your password"
-                                    style={inputStyle}
+                                    className="input-rounded"
                                 />
                                 <span
-                                    onClick={() => setShowLoginPassword(!showLoginPassword)}
-                                    style={{
-                                        position: 'absolute',
-                                        right: '15px',
-                                        top: '50%',
-                                        transform: 'translateY(-50%)',
-                                        cursor: 'pointer',
-                                        fontSize: '18px'
-                                    }}
+                                    onClick={() => updateData('showLoginPassword', !data.showLoginPassword)}
+                                    className="eye-icon"
                                 >
-                                    {showLoginPassword ? '🙈' : '👁️'}
+                                    {data.showLoginPassword ? '🙈' : '👁️'}
                                 </span>
                             </div>
                         </div>
 
                         {/* REMEMBER ME */}
-                        <div style={{
-                            display: 'flex',
-                            justifyContent: 'space-between',
-                            alignItems: 'center',
-                            marginBottom: '25px'
-                        }}>
-                            <label style={{
-                                display: 'flex',
-                                alignItems: 'center',
-                                gap: '8px',
-                                fontSize: '13px',
-                                cursor: 'pointer'
-                            }}>
+                        <div className="checkbox-wrapper">
+                            <label className="checkbox-label">
                                 <input
                                     type="checkbox"
-                                    checked={rememberMe}
-                                    onChange={(e) => setRememberMe(e.target.checked)}
-                                    style={{
-                                        width: '16px',
-                                        height: '16px',
-                                        cursor: 'pointer'
-                                    }}
+                                    checked={data.rememberMe}
+                                    onChange={(e) => updateData('rememberMe', e.target.checked)}
+                                    className="checkbox"
                                 />
                                 Remember me
                             </label>
-                            <a href="#" style={{
-                                fontSize: '13px',
-                                color: '#666',
-                                textDecoration: 'none'
-                            }}>
+                            <a href="#" className="link">
                                 Forgot password?
                             </a>
                         </div>
 
-                        {loginError && (
-                            <p style={{ color: 'red', fontSize: '13px', marginBottom: '15px' }}>
-                                {loginError}
+                        {data.loginError && (
+                            <p className="message-error">
+                                {data.loginError}
                             </p>
                         )}
 
                         <button
                             type="submit"
-                            style={{
-                                width: '100%',
-                                padding: '14px',
-                                backgroundColor: '#000',
-                                color: '#fff',
-                                border: 'none',
-                                borderRadius: '25px',
-                                cursor: 'pointer',
-                                fontSize: '14px',
-                                fontWeight: 'bold'
-                            }}
+                            className="btn btn-primary btn-full"
                         >
                             SIGN IN
                         </button>
@@ -464,14 +331,7 @@ function Login() {
             </div>
 
             {/* HELPER TEXT */}
-            <div style={{
-                marginTop: '40px',
-                padding: '20px',
-                borderTop: '1px solid #e0e0e0',
-                textAlign: 'center',
-                fontSize: '13px',
-                color: '#666'
-            }}>
+            <div className="helper-text">
                 <p>Email format: name@domain.com</p>
                 <p>Password: min. 8 chars, 1 uppercase, 1 lowercase, 1 number, 1 special character</p>
             </div>
