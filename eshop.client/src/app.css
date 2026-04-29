@@ -1,3 +1,269 @@
-body {
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9fafb;
+    color: #111827;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.container-small {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.container-large {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* naviagtion panel */
+.breadcrumb {
+    margin-bottom: 40px;
+    font-size: 14px;
+    color: #666;
+}
+
+    .breadcrumb a {
+        color: #666;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+        .breadcrumb a:hover {
+            color: #000;
+            text-decoration: underline;
+        }
+
+    .breadcrumb .separator {
+        margin: 0 8px;
+    }
+
+    .breadcrumb .current {
+        color: #000;
+        font-weight: 500;
+    }
+
+/* two columns for login */
+.two-columns {
+    display: flex;
+    gap: 50px;
+    border-top: 1px solid #e0e0e0;
+    padding-top: 40px;
+}
+
+.two-columns-left {
+    flex: 1;
+    border-right: 1px solid #e0e0e0;
+    padding-right: 40px;
+}
+
+.two-columns-right {
+    flex: 1;
+    padding-left: 10px;
+}
+
+/* title */
+.page-title {
+    font-size: 32px;
+    margin-bottom: 16px;
+    font-weight: bold;
+}
+
+.section-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+.section-subtitle {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* form */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group-last {
+    margin-bottom: 30px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* inputs */
+.input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.input-rounded {
+    width: 90%;
+    padding: 12px;
+    padding-right: 45px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    font-size: 14px;
+    outline: none;
+}
+
+.input:focus {
+    border-color: #000;
+}
+
+/* password with eye*/
+.password-wrapper {
+    position: relative;
+}
+
+.eye-icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* buttons */
+.btn {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+.btn-primary {
+    background-color: #000;
+    color: #fff;
+}
+
+    .btn-primary:hover {
+        background-color: #333;
+    }
+
+.btn-secondary {
+    background-color: #e5e7eb;
+    color: #000;
+}
+
+    .btn-secondary:hover {
+        background-color: #d1d5db;
+    }
+
+.btn-full {
+    width: 100%;
+    padding: 14px;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+/* checkbox */
+.checkbox-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.checkbox {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+/* links */
+.link {
+    font-size: 13px;
+    color: #666;
+    text-decoration: none;
+}
+
+    .link:hover {
+        text-decoration: underline;
+        color: #000;
+    }
+
+/* messages */
+.message-error {
+    color: red;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.message-success {
+    color: green;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+/* helper text */
+.helper-text {
+    margin-top: 40px;
+    padding: 20px;
+    border-top: 1px solid #e0e0e0;
+    text-align: center;
+    font-size: 13px;
+    color: #666;
+}
+
+    .helper-text p {
+        margin: 5px 0;
+    }
+
+/* respon */
+@media (max-width: 768px) {
+    .two-columns {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .two-columns-left {
+        border-right: none;
+        border-bottom: 1px solid #e0e0e0;
+        padding-right: 0;
+        padding-bottom: 40px;
+    }
+
+    .two-columns-right {
+        padding-left: 0;
+    }
+
+    .container, .container-small, .container-large {
+        padding: 20px;
+    }
 }
