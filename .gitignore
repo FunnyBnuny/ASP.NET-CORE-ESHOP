@@ -1,4 +1,25 @@
-bin/
-obj/
-.vs/
+# Build results
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+# User-specific files
+*.suo
 *.user
+*.userprefs
+# Visual Studio cache
+vs/
+# Test results
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+# NuGet packages
+*.nupkg
+**/packages/*
+!**/packages/build/
+# .NET Core artifacts
+project.lock.json
+artifacts/
+# Rider / JetBrains IDE
+idea/
+*.sln.iml
+# Ignore JSON config files (optional)
+*.json
