@@ -53,5 +53,7 @@ namespace ESHOP.Core.Models
         public DateTime created_at { get; set; } = DateTime.UtcNow;
 
         public DateTime updated_at { get; set; } = DateTime.UtcNow;
+
+        public ICollection<Order_item> Order_items { get; set; } = new List<Order_item>();
     }
 }

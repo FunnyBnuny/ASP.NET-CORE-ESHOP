@@ -38,7 +38,7 @@ namespace ESHOP.Server.Controllers
                 first_name = dto.FirstName,
                 last_name = dto.LastName,
                 phone = dto.Phone,
-                is_admin = true
+                is_admin = false
             };
 
             _db.Users.Add(user);
