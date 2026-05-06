@@ -1,2 +1,2 @@
 # ASP.NET-CORE-ESHOP
-Školní projekt ssšvt 3C
+Školní projekt ssšvt T.3C
