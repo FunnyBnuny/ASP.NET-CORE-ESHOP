@@ -1,8 +1,4 @@
 <Solution>
-  <Project Path="eshop.client/eshop.client.esproj">
-    <Build />
-    <Deploy />
-  </Project>
   <Project Path="ESHOP.Core/ESHOP.Core.csproj" />
   <Project Path="ESHOP.Server/ESHOP.Server.csproj" />
 </Solution>
