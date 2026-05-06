@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "iqsSkawIxNg=",
+  "dgSpecHash": "oS5OOOdT/hA=",
   "success": true,
-  "projectFilePath": "E:\\Files\\Škola\\Projekty\\ESHOP-ASP.NET\\ESHOP\\ESHOP.Server\\ESHOP.Server.csproj",
+  "projectFilePath": "E:\\Files\\Škola\\Projekty\\ASP.NET-CORE-ESHOP\\ESHOP.Server\\ESHOP.Server.csproj",
   "expectedPackageFiles": [
     "D:\\Users\\KratochvilVaclav\\.nuget\\packages\\bouncycastle.cryptography\\2.6.2\\bouncycastle.cryptography.2.6.2.nupkg.sha512",
     "D:\\Users\\KratochvilVaclav\\.nuget\\packages\\google.protobuf\\3.32.0\\google.protobuf.3.32.0.nupkg.sha512",

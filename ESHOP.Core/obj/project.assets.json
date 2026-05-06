@@ -1268,11 +1268,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Files\\Škola\\Projekty\\ESHOP-ASP.NET\\ESHOP\\ESHOP.Core\\ESHOP.Core.csproj",
+      "projectUniqueName": "E:\\Files\\Škola\\Projekty\\ASP.NET-CORE-ESHOP\\ESHOP.Core\\ESHOP.Core.csproj",
       "projectName": "ESHOP.Core",
-      "projectPath": "E:\\Files\\Škola\\Projekty\\ESHOP-ASP.NET\\ESHOP\\ESHOP.Core\\ESHOP.Core.csproj",
+      "projectPath": "E:\\Files\\Škola\\Projekty\\ASP.NET-CORE-ESHOP\\ESHOP.Core\\ESHOP.Core.csproj",
       "packagesPath": "D:\\Users\\KratochvilVaclav\\.nuget\\packages\\",
-      "outputPath": "E:\\Files\\Škola\\Projekty\\ESHOP-ASP.NET\\ESHOP\\ESHOP.Core\\obj\\",
+      "outputPath": "E:\\Files\\Škola\\Projekty\\ASP.NET-CORE-ESHOP\\ESHOP.Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Apps\\WorkApps\\SQL\\SQL Studio 2021\\Shared\\NuGetPackages"

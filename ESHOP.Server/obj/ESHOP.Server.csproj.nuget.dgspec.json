@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Files\\Škola\\Projekty\\ESHOP-ASP.NET\\ESHOP\\ESHOP.Server\\ESHOP.Server.csproj": {}
+    "E:\\Files\\Škola\\Projekty\\ASP.NET-CORE-ESHOP\\ESHOP.Server\\ESHOP.Server.csproj": {}
   },
   "projects": {
-    "E:\\Files\\Škola\\Projekty\\ESHOP-ASP.NET\\ESHOP\\ESHOP.Core\\ESHOP.Core.csproj": {
+    "E:\\Files\\Škola\\Projekty\\ASP.NET-CORE-ESHOP\\ESHOP.Core\\ESHOP.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Files\\Škola\\Projekty\\ESHOP-ASP.NET\\ESHOP\\ESHOP.Core\\ESHOP.Core.csproj",
+        "projectUniqueName": "E:\\Files\\Škola\\Projekty\\ASP.NET-CORE-ESHOP\\ESHOP.Core\\ESHOP.Core.csproj",
         "projectName": "ESHOP.Core",
-        "projectPath": "E:\\Files\\Škola\\Projekty\\ESHOP-ASP.NET\\ESHOP\\ESHOP.Core\\ESHOP.Core.csproj",
+        "projectPath": "E:\\Files\\Škola\\Projekty\\ASP.NET-CORE-ESHOP\\ESHOP.Core\\ESHOP.Core.csproj",
         "packagesPath": "D:\\Users\\KratochvilVaclav\\.nuget\\packages\\",
-        "outputPath": "E:\\Files\\Škola\\Projekty\\ESHOP-ASP.NET\\ESHOP\\ESHOP.Core\\obj\\",
+        "outputPath": "E:\\Files\\Škola\\Projekty\\ASP.NET-CORE-ESHOP\\ESHOP.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Apps\\WorkApps\\SQL\\SQL Studio 2021\\Shared\\NuGetPackages"
@@ -81,14 +81,14 @@
         }
       }
     },
-    "E:\\Files\\Škola\\Projekty\\ESHOP-ASP.NET\\ESHOP\\ESHOP.Server\\ESHOP.Server.csproj": {
+    "E:\\Files\\Škola\\Projekty\\ASP.NET-CORE-ESHOP\\ESHOP.Server\\ESHOP.Server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Files\\Škola\\Projekty\\ESHOP-ASP.NET\\ESHOP\\ESHOP.Server\\ESHOP.Server.csproj",
+        "projectUniqueName": "E:\\Files\\Škola\\Projekty\\ASP.NET-CORE-ESHOP\\ESHOP.Server\\ESHOP.Server.csproj",
         "projectName": "ESHOP.Server",
-        "projectPath": "E:\\Files\\Škola\\Projekty\\ESHOP-ASP.NET\\ESHOP\\ESHOP.Server\\ESHOP.Server.csproj",
+        "projectPath": "E:\\Files\\Škola\\Projekty\\ASP.NET-CORE-ESHOP\\ESHOP.Server\\ESHOP.Server.csproj",
         "packagesPath": "D:\\Users\\KratochvilVaclav\\.nuget\\packages\\",
-        "outputPath": "E:\\Files\\Škola\\Projekty\\ESHOP-ASP.NET\\ESHOP\\ESHOP.Server\\obj\\",
+        "outputPath": "E:\\Files\\Škola\\Projekty\\ASP.NET-CORE-ESHOP\\ESHOP.Server\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Apps\\WorkApps\\SQL\\SQL Studio 2021\\Shared\\NuGetPackages"
@@ -110,8 +110,8 @@
             "framework": "net8.0",
             "targetAlias": "net8.0",
             "projectReferences": {
-              "E:\\Files\\Škola\\Projekty\\ESHOP-ASP.NET\\ESHOP\\ESHOP.Core\\ESHOP.Core.csproj": {
-                "projectPath": "E:\\Files\\Škola\\Projekty\\ESHOP-ASP.NET\\ESHOP\\ESHOP.Core\\ESHOP.Core.csproj"
+              "E:\\Files\\Škola\\Projekty\\ASP.NET-CORE-ESHOP\\ESHOP.Core\\ESHOP.Core.csproj": {
+                "projectPath": "E:\\Files\\Škola\\Projekty\\ASP.NET-CORE-ESHOP\\ESHOP.Core\\ESHOP.Core.csproj"
               }
             }
           }
