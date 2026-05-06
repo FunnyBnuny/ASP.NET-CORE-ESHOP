@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Willi\\Documents\\GitHub\\ASP.NET-CORE-ESHOP\\ESHOP.Core\\ESHOP.Core.csproj": {}
+    "C:\\Users\\Stepan\\Desktop\\shop\\ESHOP.Core\\ESHOP.Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Willi\\Documents\\GitHub\\ASP.NET-CORE-ESHOP\\ESHOP.Core\\ESHOP.Core.csproj": {
+    "C:\\Users\\Stepan\\Desktop\\shop\\ESHOP.Core\\ESHOP.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Willi\\Documents\\GitHub\\ASP.NET-CORE-ESHOP\\ESHOP.Core\\ESHOP.Core.csproj",
+        "projectUniqueName": "C:\\Users\\Stepan\\Desktop\\shop\\ESHOP.Core\\ESHOP.Core.csproj",
         "projectName": "ESHOP.Core",
-        "projectPath": "C:\\Users\\Willi\\Documents\\GitHub\\ASP.NET-CORE-ESHOP\\ESHOP.Core\\ESHOP.Core.csproj",
-        "packagesPath": "C:\\Users\\Willi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Willi\\Documents\\GitHub\\ASP.NET-CORE-ESHOP\\ESHOP.Core\\obj\\",
+        "projectPath": "C:\\Users\\Stepan\\Desktop\\shop\\ESHOP.Core\\ESHOP.Core.csproj",
+        "packagesPath": "C:\\Users\\Stepan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Stepan\\Desktop\\shop\\ESHOP.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Willi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Stepan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -75,7 +75,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.313/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

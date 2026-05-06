@@ -10,3 +10,16 @@ E:\Files\Škola\Projekty\ESHOP-ASP.NET\ESHOP\ESHOP.Core\obj\Debug\net8.0\ESHOP.C
 E:\Files\Škola\Projekty\ESHOP-ASP.NET\ESHOP\ESHOP.Core\obj\Debug\net8.0\refint\ESHOP.Core.dll
 E:\Files\Škola\Projekty\ESHOP-ASP.NET\ESHOP\ESHOP.Core\obj\Debug\net8.0\ESHOP.Core.pdb
 E:\Files\Škola\Projekty\ESHOP-ASP.NET\ESHOP\ESHOP.Core\obj\Debug\net8.0\ref\ESHOP.Core.dll
+C:\Users\Stepan\Desktop\shop\ESHOP.Core\obj\Debug\net8.0\ESHOP.Core.csproj.AssemblyReference.cache
+C:\Users\Stepan\Desktop\shop\ESHOP.Core\obj\Debug\net8.0\ESHOP.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Stepan\Desktop\shop\ESHOP.Core\obj\Debug\net8.0\ESHOP.Core.AssemblyInfoInputs.cache
+C:\Users\Stepan\Desktop\shop\ESHOP.Core\obj\Debug\net8.0\ESHOP.Core.AssemblyInfo.cs
+C:\Users\Stepan\Desktop\shop\ESHOP.Core\obj\Debug\net8.0\ESHOP.Core.csproj.CoreCompileInputs.cache
+C:\Users\Stepan\Desktop\shop\ESHOP.Core\obj\Debug\net8.0\ESHOP.Core.sourcelink.json
+C:\Users\Stepan\Desktop\shop\ESHOP.Core\obj\Debug\net8.0\ESHOP.Core.dll
+C:\Users\Stepan\Desktop\shop\ESHOP.Core\obj\Debug\net8.0\refint\ESHOP.Core.dll
+C:\Users\Stepan\Desktop\shop\ESHOP.Core\obj\Debug\net8.0\ESHOP.Core.pdb
+C:\Users\Stepan\Desktop\shop\ESHOP.Core\bin\Debug\net8.0\ESHOP.Core.deps.json
+C:\Users\Stepan\Desktop\shop\ESHOP.Core\bin\Debug\net8.0\ESHOP.Core.dll
+C:\Users\Stepan\Desktop\shop\ESHOP.Core\bin\Debug\net8.0\ESHOP.Core.pdb
+C:\Users\Stepan\Desktop\shop\ESHOP.Core\obj\Debug\net8.0\ref\ESHOP.Core.dll
