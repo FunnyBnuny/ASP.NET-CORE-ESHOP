@@ -3,7 +3,7 @@ import "../Components/NavBar";
 import "../Components/Footer";
 import { createBrowserRouter } from "react-router";
 import { RouterProvider } from "react-router/dom";
-import Index from "./pages/Login";
+import Index from "./pages/Products";
 import NavBar from "../Components/NavBar";
 import Footer from "../Components/Footer";
 
@@ -20,9 +20,9 @@ function App() {
             <NavBar />
             <div style={{ flex: 1 }}>
                 <RouterProvider router={router} />
-            </div> 
+            </div>
             <Footer />
-        </div> 
+        </div>
     );
 }
 
