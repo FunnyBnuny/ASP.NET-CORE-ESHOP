@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "oS5OOOdT/hA=",
+  "dgSpecHash": "J77Jcf6JuO4=",
   "success": true,
   "projectFilePath": "E:\\Files\\Škola\\Projekty\\ASP.NET-CORE-ESHOP\\ESHOP.Server\\ESHOP.Server.csproj",
   "expectedPackageFiles": [
@@ -9,7 +9,7 @@
     "D:\\Users\\KratochvilVaclav\\.nuget\\packages\\k4os.compression.lz4\\1.3.8\\k4os.compression.lz4.1.3.8.nupkg.sha512",
     "D:\\Users\\KratochvilVaclav\\.nuget\\packages\\k4os.compression.lz4.streams\\1.3.8\\k4os.compression.lz4.streams.1.3.8.nupkg.sha512",
     "D:\\Users\\KratochvilVaclav\\.nuget\\packages\\k4os.hash.xxhash\\1.0.8\\k4os.hash.xxhash.1.0.8.nupkg.sha512",
-    "D:\\Users\\KratochvilVaclav\\.nuget\\packages\\microsoft.aspnetcore.spaproxy\\8.0.26\\microsoft.aspnetcore.spaproxy.8.0.26.nupkg.sha512",
+    "D:\\Users\\KratochvilVaclav\\.nuget\\packages\\microsoft.aspnetcore.spaproxy\\8.0.27\\microsoft.aspnetcore.spaproxy.8.0.27.nupkg.sha512",
     "D:\\Users\\KratochvilVaclav\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.26\\microsoft.entityframeworkcore.8.0.26.nupkg.sha512",
     "D:\\Users\\KratochvilVaclav\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.26\\microsoft.entityframeworkcore.abstractions.8.0.26.nupkg.sha512",
     "D:\\Users\\KratochvilVaclav\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\8.0.26\\microsoft.entityframeworkcore.analyzers.8.0.26.nupkg.sha512",

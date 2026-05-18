@@ -1,28 +1,25 @@
 import "./app.css";
-import "../Components/NavBar";
-import "../Components/Footer";
-import { createBrowserRouter } from "react-router";
-import { RouterProvider } from "react-router/dom";
-import Index from "./pages/Products";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NavBar from "../Components/NavBar";
 import Footer from "../Components/Footer";
-
-const router = createBrowserRouter([
-    {
-        path: "/",
-        element: <Index />,
-    },
-]);
+import HomePage from "./pages/index";   //  correct path
+import LoginPage from "./pages/Login";  // if you have one
 
 function App() {
     return (
-        <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
-            <NavBar />
-            <div style={{ flex: 1 }}>
-                <RouterProvider router={router} />
+        <BrowserRouter>
+            <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
+                <NavBar />
+                <div style={{ flex: 1 }}>
+                    <Routes>
+                        <Route path="/" element={<HomePage />} />
+                        <Route path="/login" element={<LoginPage />} />
+                        {/* Add other routes later */}
+                    </Routes>
+                </div>
+                <Footer />
             </div>
-            <Footer />
-        </div>
+        </BrowserRouter>
     );
 }
 
