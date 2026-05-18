@@ -54,7 +54,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
     },
 }));
 
-function PrimarySearchAppBar() {
+function PrimarySearchAppBar({ navigateTo }) {
     const [anchorEl, setAnchorEl] = React.useState(null);
     const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
     const [shopAnchorEl, setShopAnchorEl] = React.useState(null);
@@ -88,6 +88,10 @@ function PrimarySearchAppBar() {
         setShopAnchorEl(null);
     };
 
+    // Navigation
+    const handleLogoClick = () => navigateTo("home");
+    const handleAllProducts = () => navigateTo("products");
+
     const menuId = 'primary-search-account-menu';
     const renderMenu = (
         <Menu
@@ -114,13 +118,14 @@ function PrimarySearchAppBar() {
             open={isShopMenuOpen}
             onClose={handleShopMenuClose}
         >
-            <MenuItem onClick={handleShopMenuClose}>All Products</MenuItem>
+            <MenuItem onClick={handleAllProducts}>All Products</MenuItem>
             <MenuItem onClick={handleShopMenuClose}>Men's Apparel</MenuItem>
             <MenuItem onClick={handleShopMenuClose}>Women's Apparel</MenuItem>
             <MenuItem onClick={handleShopMenuClose}>Accessories</MenuItem>
         </Menu>
     );
 
+    /* Main buttons */
     const mobileMenuId = 'primary-search-account-menu-mobile';
     const renderMobileMenu = (
         <Menu
@@ -175,7 +180,7 @@ function PrimarySearchAppBar() {
                             variant="h5"
                             noWrap
                             component="div"
-                            onClick={handleShopMenuClose}
+                            onClick={handleLogoClick}
                             sx={{
                                 fontWeight: 800,
                                 cursor: 'pointer',

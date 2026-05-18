@@ -1,25 +1,39 @@
 import "./app.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { useState } from "react";
 import NavBar from "../Components/NavBar";
 import Footer from "../Components/Footer";
-import HomePage from "./pages/index";   //  correct path
-import LoginPage from "./pages/Login";  // if you have one
+import HomePage from "./pages/index";
+import ProductsPage from "./pages/Products";
+import LoginPage from "./pages/Login";
 
 function App() {
+    const [currentPage, setCurrentPage] = useState("home");
+
+    const navigateTo = (page) => {
+        setCurrentPage(page);
+    };
+    /* pages */
+    const renderPage = () => {
+        switch (currentPage) {
+            case "home":
+                return <HomePage />;
+            case "products":
+                return <ProductsPage />;
+            case "login":
+                return <LoginPage />;
+            default:
+                return <HomePage />;
+        }
+    };
+
     return (
-        <BrowserRouter>
-            <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
-                <NavBar />
-                <div style={{ flex: 1 }}>
-                    <Routes>
-                        <Route path="/" element={<HomePage />} />
-                        <Route path="/login" element={<LoginPage />} />
-                        {/* Add other routes later */}
-                    </Routes>
-                </div>
-                <Footer />
+        <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
+            <NavBar navigateTo={navigateTo} />
+            <div style={{ flex: 1 }}>
+                {renderPage()}
             </div>
-        </BrowserRouter>
+            <Footer />
+        </div>
     );
 }
 
