@@ -46,3 +46,26 @@
 ---
 
 ## WEEK-3
+### KratochvilVaclav  
+-   NavBar 1.0
+-   Page Navigation
+### crejn9054  
+- Backend filtration (scrapped)
+### FunnyBnuny  
+- Database Implementation
+### magicc01  
+-   Finished Product page
+
+---
+
+## WEEK-4
+### KratochvilVaclav  
+
+### crejn9054  
+
+### FunnyBnuny  
+
+### magicc01  
+
+
+---
