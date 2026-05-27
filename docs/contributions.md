@@ -45,7 +45,7 @@
 
 ---
 
-## WEEK-3
+## WEEK-3 & 4
 ### KratochvilVaclav  
 -   NavBar 1.0
 -   Page Navigation
@@ -58,7 +58,7 @@
 
 ---
 
-## WEEK-4
+## WEEK-5
 ### KratochvilVaclav  
 
 ### crejn9054  
