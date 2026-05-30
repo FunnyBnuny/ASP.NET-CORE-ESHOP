@@ -103,7 +103,7 @@ function PrimarySearchAppBar({ navigateTo }) {
             open={isMenuOpen}
             onClose={handleMenuClose}
         >
-            <MenuItem onClick={handleMenuClose}>My Profile</MenuItem>
+            <MenuItem onClick={() => { handleMenuClose(); navigateTo("profile"); }}>My Profile</MenuItem>
         </Menu>
     );
     /*menu shi*/
@@ -152,7 +152,7 @@ function PrimarySearchAppBar({ navigateTo }) {
                 </IconButton>
                 <p>Cart</p>
             </MenuItem>
-            <MenuItem onClick={handleProfileMenuOpen}>
+            <MenuItem onClick={() => { handleMenuClose(); navigateTo("profile"); }}>
                 <IconButton size="large" aria-label="account of current user" color="inherit">
                     <AccountCircle />
                 </IconButton>
@@ -222,7 +222,7 @@ function PrimarySearchAppBar({ navigateTo }) {
                         {/* Desktop Icons */}
                         <Box sx={{ display: { xs: 'none', md: 'flex' }, alignItems: 'center' }}>
                             <IconButton size="large" aria-label="show cart items" color="inherit">
-                                <Badge badgeContent={0} color="error">
+                                <Badge badgeContent={1} color="error">
                                     <ShoppingCartIcon />
                                 </Badge>
                             </IconButton>
