@@ -15,3 +15,57 @@
 - Design of the frontend User Interface  
 
 ---
+
+## WEEK-1  
+### KratochvilVaclav  
+- Updated Database architecture  
+- NavBar 0.1  
+### crejn9054  
+- Updated Models  
+- Authentication  
+### FunnyBnuny  
+- Added Models  
+### magicc01  
+- Full Login Page  
+
+---
+
+## WEEK-2  
+### KratochvilVaclav  
+-   Frontend Pull Request
+### crejn9054  
+- Product Controller
+- rest api
+### FunnyBnuny  
+  
+### magicc01  
+- Footer  
+- Started Product Page
+- Frontend Pull Request
+
+---
+
+## WEEK-3 & 4
+### KratochvilVaclav  
+-   NavBar 1.0
+-   Page Navigation
+### crejn9054  
+- Backend filtration (scrapped)
+### FunnyBnuny  
+- Database Implementation
+### magicc01  
+- Finished Product page
+
+---
+
+## WEEK-5
+### KratochvilVaclav  
+- nothing due to late backend commits
+### crejn9054  
+- very late backend commits
+### FunnyBnuny  
+- nothing due to late backend commits
+### magicc01  
+- Profile Page
+
+---
