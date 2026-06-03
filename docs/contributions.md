@@ -54,18 +54,18 @@
 ### FunnyBnuny  
 - Database Implementation
 ### magicc01  
--   Finished Product page
+- Finished Product page
 
 ---
 
 ## WEEK-5
 ### KratochvilVaclav  
-
+- nothing due to late backend commits
 ### crejn9054  
-
+- very late backend commits
 ### FunnyBnuny  
-
+- nothing due to late backend commits
 ### magicc01  
-
+- Profile Page
 
 ---
