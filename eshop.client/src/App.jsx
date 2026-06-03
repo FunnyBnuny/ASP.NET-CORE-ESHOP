@@ -1,28 +1,68 @@
 import "./app.css";
-import "../Components/NavBar";
-import "../Components/Footer";
-import { createBrowserRouter } from "react-router";
-import { RouterProvider } from "react-router/dom";
-import Index from "./pages/Login";
+import { useState } from "react";
 import NavBar from "../Components/NavBar";
 import Footer from "../Components/Footer";
-
-const router = createBrowserRouter([
-    {
-        path: "/",
-        element: <Index />,
-    },
-]);
+import HomePage from "./pages/index.jsx";
+import ProductsPage from "./pages/Products.jsx";
+import LoginPage from "./pages/Login";
+import ProfilePage from "./pages/Profile.jsx";
 
 function App() {
+    const [currentPage, setCurrentPage] = useState("home");
+    const [selectedCategory, setSelectedCategory] = useState(null);
+    const [userName, setUserName] = useState(localStorage.getItem("loggedInUser") || "");
+    const [userEmail, setUserEmail] = useState(localStorage.getItem("loggedInUserEmail") || "");
+
+    const navigateTo = (page, category = null) => {
+        setCurrentPage(page);
+        setSelectedCategory(category);
+    };
+
+    const handleUpdateProfile = (firstName, lastName, email) => {
+        const fullName = `${firstName} ${lastName}`;
+        setUserName(fullName);
+        setUserEmail(email);
+        localStorage.setItem("loggedInUser", fullName);
+        localStorage.setItem("loggedInUserEmail", email);
+    };
+
+    const handleLogout = () => {
+        localStorage.removeItem("loggedInUser");
+        localStorage.removeItem("loggedInUserEmail");
+        localStorage.removeItem("rememberedUser");
+        setUserName("");
+        setUserEmail("");
+        setCurrentPage("home");
+    };
+
+    const renderPage = () => {
+        switch (currentPage) {
+            case "home":
+                return <HomePage />;
+            case "products":
+                return <ProductsPage initialCategory={selectedCategory} />;
+            case "login":
+                return <LoginPage />;
+            case "profile":
+                return <ProfilePage
+                    userName={userName}
+                    userEmail={userEmail}
+                    onUpdateProfile={handleUpdateProfile}
+                    onLogout={handleLogout}
+                />;
+            default:
+                return <HomePage />;
+        }
+    };
+
     return (
         <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
-            <NavBar />
+            <NavBar navigateTo={navigateTo} />
             <div style={{ flex: 1 }}>
-                <RouterProvider router={router} />
-            </div> 
+                {renderPage()}
+            </div>
             <Footer />
-        </div> 
+        </div>
     );
 }
 
