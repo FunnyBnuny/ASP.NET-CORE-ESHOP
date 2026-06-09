@@ -75,7 +75,7 @@ public class AddressesController : ControllerBase
             is_default_billing = dto.IsDefaultBilling
         };
 
-        // Pokud je tato adresa výchozí, odstraníme výchozí příznak u ostatních adres uživatele
+        
         if (dto.IsDefaultShipping)
         {
             var others = await _db.Addresses.Where(a => a.user_id == UserId && a.is_default_shipping).ToListAsync();

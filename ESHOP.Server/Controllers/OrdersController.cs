@@ -17,7 +17,7 @@ public class OrdersController : ControllerBase
     private readonly EshopContext _db;
     public OrdersController(EshopContext db) => _db = db;
 
-    // Získání aktuálního košíku přihlášeného uživatele
+
     [HttpGet("cart")]
     [Authorize]
     public async Task<ActionResult<OrderDto>> GetCart()
@@ -44,7 +44,7 @@ public class OrdersController : ControllerBase
         return Ok(MapToDto(cart));
     }
 
-    // Přidání položky do košíku
+ 
     [HttpPost("cart/items")]
     [Authorize]
     public async Task<IActionResult> AddToCart([FromBody] AddToCartDto dto)
@@ -92,7 +92,7 @@ public class OrdersController : ControllerBase
         return Ok();
     }
 
-    // Dokončení objednávky (checkout)
+ 
     [HttpPost("cart/checkout")]
     [Authorize]
     public async Task<IActionResult> Checkout([FromBody] CheckoutDto dto)
@@ -106,14 +106,14 @@ public class OrdersController : ControllerBase
         if (cart == null || !cart.Order_items.Any())
             return BadRequest("Košík je prázdný.");
 
-        // Ověření dostupnosti
+       
         foreach (var item in cart.Order_items)
         {
             if (item.Product_variant.stock_quantity < item.quantity)
                 return BadRequest($"Nedostatečné množství pro variantu {item.Product_variant.sku}");
         }
 
-        // Aktualizace skladu
+        
         foreach (var item in cart.Order_items)
         {
             item.Product_variant.stock_quantity -= item.quantity;
@@ -134,7 +134,7 @@ public class OrdersController : ControllerBase
         return Ok(new { OrderNumber = cart.order_number });
     }
 
-    // Historie objednávek uživatele
+
     [HttpGet("my")]
     [Authorize]
     public async Task<ActionResult<IEnumerable<OrderDto>>> GetMyOrders()
@@ -151,7 +151,7 @@ public class OrdersController : ControllerBase
         return Ok(orders.Select(MapToDto));
     }
 
-    // Admin: všechny objednávky
+
     [HttpGet]
     [Authorize(Roles = "Admin")]
     public async Task<ActionResult<IEnumerable<OrderDto>>> GetAllOrders()
@@ -165,7 +165,7 @@ public class OrdersController : ControllerBase
         return Ok(orders.Select(MapToDto));
     }
 
-    // Admin: změna stavu objednávky
+
     [HttpPatch("{id}/status")]
     [Authorize(Roles = "Admin")]
     public async Task<IActionResult> UpdateStatus(int id, [FromBody] UpdateOrderStatusDto dto)
@@ -178,7 +178,7 @@ public class OrdersController : ControllerBase
         return NoContent();
     }
 
-    // CSV export – ROZŠIŘUJÍCÍ FUNKCE
+
     [HttpGet("export/csv")]
     [Authorize(Roles = "Admin")]
     public async Task<IActionResult> ExportCsv([FromServices] CsvExportService csvService)
@@ -192,7 +192,7 @@ public class OrdersController : ControllerBase
         return File(csvData, "text/csv", $"orders_{DateTime.Now:yyyyMMdd_HHmmss}.csv");
     }
 
-    // pomocné metody
+
     private string GenerateOrderNumber() => $"ORD-{DateTime.Now:yyyyMMddHHmmss}-{new Random().Next(1000, 9999)}";
 
     private OrderDto MapToDto(Order o)

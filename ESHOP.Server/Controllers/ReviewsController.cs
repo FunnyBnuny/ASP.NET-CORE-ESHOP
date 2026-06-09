@@ -15,7 +15,7 @@ public class ReviewsController : ControllerBase
     private readonly EshopContext _db;
     public ReviewsController(EshopContext db) => _db = db;
 
-    // Veřejné schválené recenze pro produkt
+
     [HttpGet("product/{productId}")]
     public async Task<ActionResult<IEnumerable<ReviewDto>>> GetByProduct(int productId)
     {
@@ -35,14 +35,13 @@ public class ReviewsController : ControllerBase
         return Ok(reviews);
     }
 
-    // Přidání recenze (pouze přihlášený uživatel)
+
     [HttpPost]
     [Authorize]
     public async Task<ActionResult<ReviewDto>> Create(CreateReviewDto dto)
     {
         var userId = int.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier)!);
 
-        // Kontrola, zda uživatel již nerecenzoval tento produkt
         var existing = await _db.Reviews.FirstOrDefaultAsync(r => r.user_id == userId && r.product_id == dto.ProductId);
         if (existing != null)
             return BadRequest("Již jste tento produkt recenzovali.");
@@ -54,7 +53,7 @@ public class ReviewsController : ControllerBase
             rating = dto.Rating,
             title = dto.Title,
             comment = dto.Comment,
-            is_approved = false   // čeká na schválení adminem
+            is_approved = false   
         };
         _db.Reviews.Add(review);
         await _db.SaveChangesAsync();
@@ -62,7 +61,7 @@ public class ReviewsController : ControllerBase
         return Ok(new { Message = "Recenze byla odeslána ke schválení." });
     }
 
-    // Admin: získání neschválených recenzí
+
     [HttpGet("pending")]
     [Authorize(Roles = "Admin")]
     public async Task<ActionResult<IEnumerable<ReviewDto>>> GetPending()
@@ -86,7 +85,7 @@ public class ReviewsController : ControllerBase
         return Ok(reviews);
     }
 
-    // Admin: schválení recenze
+   
     [HttpPatch("{id}/approve")]
     [Authorize(Roles = "Admin")]
     public async Task<IActionResult> Approve(int id)
@@ -98,7 +97,7 @@ public class ReviewsController : ControllerBase
         return NoContent();
     }
 
-    // Admin: smazání recenze
+
     [HttpDelete("{id}")]
     [Authorize(Roles = "Admin")]
     public async Task<IActionResult> Delete(int id)
